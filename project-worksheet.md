@@ -70,8 +70,8 @@ All times below are listed in hours:
 | Debugging Deployed Frontend | H | 1 | 0 | 0 |
 | Make Site Responsive | H | 3 | 0 | 0 |
 | additional styling via bootstrap | M | 4 | 0 | 0 |
-|Form for coffeelovers 
-| Total | H | 41.5 | 5 | 5 |
+|Form for coffeelovers | M | 4 | 0 | 0 |
+| Total | H | 45.5 | 5 | 5 |
 
 |PostMVP|
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
@@ -80,14 +80,15 @@ All times below are listed in hours:
 |Login for Roasters so that only Roasters can create and modify their info and Comment Components | H | 4 | 0 | 0 |
 |Add an additional css library | H | 2 | 0 | 0 |
 |Add a google api on the front end to show photos of the roasters building or city| H | 4 | 0 | 0 |
-| Total | H | 41.5 | 5 | 5 |
+| Total | H | 14 | 0 | 0 |
  
 ## Additional Libraries
 Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc.
 
+Axios,
+ReactStrap
+
 ## Code Snippet
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description. Code snippet should not be greater than 10 lines of code.
 
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+
