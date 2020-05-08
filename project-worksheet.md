@@ -11,8 +11,8 @@ https://github.com/OlegGelfand/RoastersCornerFE, https://github.com/OlegGelfand/
 
 
 ## Project Description
-Full stack App. Designed to be a quiet site, linking roasts from all across the U.S to coffee lovers. Resulting in a nice place to reconnect to your home towns roaster, try something new. and for my drop-ship business to expand.
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+Full stack App. Designed to be a quiet site, linking roasters from all across the U.S to coffee lovers. Resulting in a nice place to reconnect to your home towns' roaster, try something new, and for my drop-ship business to expand.
+
 
 ## Wireframes
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
