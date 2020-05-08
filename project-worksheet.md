@@ -22,12 +22,19 @@ https://www.figma.com/file/fVlxI5E5mdDVArsbx1GJ0r/Project-4?node-id=5%3A0
 ### MVP/PostMVP - 5min
 The functionality will then be divided into two separate lists: MPV and PostMVP. Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.
 
-#### MVP EXAMPLE
-Build a back end to send any data relevant for Roasters
-Render data on page
-Allow user to interact with the page
+#### MVP
+- Full Crud functionality for at least Roasters or coffee data
+- Create API which will provide Roaster/Coffee data to the frontend
+- Form for Roasters to fill out -create data
+- Form for customers to fill out - doesn't go to back end, rather an email or site that will allow owner to get feedback
+- Responsive Design
+- clean design
+- render some roasters on the load page
+- React hooks (useState, useEffect, useContext, potentially others)
 #### PostMVP EXAMPLE
-Add localStorage or firebase for storage
+- Add a google api. Will be used for rendering a photo of the closest roaster to  user location, potentially render all local roasters on load page.
+- incorporate more CSS libraries, to improve the front end
+- create a fully functional login page in order that data can only be created by roasters.
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
 Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components.
