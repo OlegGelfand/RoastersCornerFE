@@ -1,28 +1,35 @@
-Project Overview: This will be a place for coffee lovers to unite with roasters from their hometown, as well as a place for roasters to market their product nationally.
-Project Links
-add your github repo link: https://github.com/OlegGelfand/RoastersCornerFE, https://github.com/OlegGelfand/RoastersCornerBE
-add your deployment link
-Project Description: Full stack App. Designed to be a quiet site, linking roasts from all across the U.S to coffee lovers. Resulting in a nice place to reconnect to your home towns roaster, try something new. and for my drop-ship business to expand.
+# Project Overview
+This will be a place for coffee lovers to unite with roasters from their hometown, as well as a place for roasters to market their product nationally.
+## Project Links
+ 
+
+- [add your github repo link]()https://github.com/OlegGelfand/RoastersCornerFE, https://github.com/OlegGelfand/RoastersCornerBE
+- [add your deployment link]()
+
+## Project Description
+Full stack App. Designed to be a quiet site, linking roasts from all across the U.S to coffee lovers. Resulting in a nice place to reconnect to your home towns roaster, try something new. and for my drop-ship business to expand.
 Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 
-Wireframes
+## Wireframes
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-add link to your wireframes
+- [add link to your wireframes]()
+- [add link to your react architecture]()
+Both:
 https://www.figma.com/file/fVlxI5E5mdDVArsbx1GJ0r/Project-4?node-id=5%3A0
-add link to your react architecture
 
-MVP/PostMVP - 5min
+
+### MVP/PostMVP - 5min
 The functionality will then be divided into two separate lists: MPV and PostMVP. Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.
 
-MVP EXAMPLE
+#### MVP EXAMPLE
 Build a back end to send any data relevant for Roasters
 Render data on page
 Allow user to interact with the page
-PostMVP EXAMPLE
+#### PostMVP EXAMPLE
 Add localStorage or firebase for storage
-Components
-Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
+## Components
+##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
 Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components.
 
 |Component|	Description|
@@ -67,14 +74,17 @@ All times below are listed in hours:
 | Total | H | 41.5 | 5 | 5 |
 
 |PostMVP|
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
 | Add additional functionality on front end for postMVP goals | M | 4 | 0 | 0 |
 |Login for Roasters so that only Roasters can create and modify their info and Comment Components | H | 4 | 0 | 0 |
 |Add an additional css library | H | 2 | 0 | 0 |
 |Add a google api on the front end to show photos of the roasters building or city| H | 4 | 0 | 0 |
-Additional Libraries
+| Total | H | 41.5 | 5 | 5 |
+ 
+## Additional Libraries
 Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc.
 
-Code Snippet
+## Code Snippet
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description. Code snippet should not be greater than 10 lines of code.
 
 function reverse(string) {
