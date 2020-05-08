@@ -33,6 +33,7 @@ Add localStorage or firebase for storage
 Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components.
 
 |Component|	Description|
+| --- | :---: |  
 |App	|This will ideally not do anything except for be the source for a useContext hook|
 |Main    |This will contain the router and render some of the roasters|
 |RightNav |This will have the links to roaster info, list of roasts, roast types|
