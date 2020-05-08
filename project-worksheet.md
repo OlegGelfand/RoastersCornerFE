@@ -75,6 +75,7 @@ All times below are listed in hours:
 
 |PostMVP|
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
 | Add additional functionality on front end for postMVP goals | M | 4 | 0 | 0 |
 |Login for Roasters so that only Roasters can create and modify their info and Comment Components | H | 4 | 0 | 0 |
 |Add an additional css library | H | 2 | 0 | 0 |
