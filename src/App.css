@@ -1,0 +1,121 @@
+.App {
+  text-align: center;
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+
+  background-color: #282c34;
+  min-height: 40px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color:rgba(0, 0, 0,.5);
+  background-color:lightblue
+  
+}
+ul li{
+  display: flex;
+  flex-direction: row;
+  
+  list-style-type: none;
+  width:100%;
+  word-spacing: 5px;
+}
+ul li:last-of-type{
+  float:right;
+  text-align: right;
+}
+h4 {
+  text-align: left;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  color:rgba(0,0,0,.4);
+  
+}
+.navTop{
+  text-align: right;
+}
+
+/* body{
+  background-color: aliceblue;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+.main {
+  background-color: #936B6C;
+  
+  height:120px;
+  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2), 0 6px 20px 8px rgba(107, 79, 79),0 6px 2px 0 rgba(0, 0, 0,.5);
+}
+img {
+  height:120px;
+  border-radius: 5%;
+  opacity: 80%;
+}
+
+.left-nav {
+  float: left;
+  height: 100vh;
+  width:10%;
+  /* background-color: grey; */
+  /* border-style: double; */
+  /* border-color:aliceblue; */
+  border-radius:10px;
+  /* border-collapse: collapse; */
+  background-image:  url("https://camanoislandcoffee.com/wp-content/uploads/2015/12/Coffee-Strength-vs-Roast.jpg");
+  background-position: 100px ;
+  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2), 0 6px 20px 0 rgba(107, 79, 79);
+  margin-left:20px;
+  
+  
+  
+  
+}
+.left-nav li {
+  list-style-type: none;
+  color:white;
+  line-height:30px;
+  font-weight: 900;
+  margin-right:30px;
+  
+}
+.right-nav {
+  float: right;
+  height: 100vh;
+  border-radius:10px;
+  width:10%;
+  /* background-color: blueviolet; */
+  margin-right:10px;
+  background-image: url("https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/4423621/910/607/m2/fpnw/wm0/_mg_7215-.jpg?1525810534&s=439e5f3411eea8423e3e14a68a292f28");
+  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2), 0 6px 20px 0 rgba(107, 79, 79),0 6px 2px 0 rgba(255, 255, 79);
+}
+.App-link {
+  color: #61dafb;
+  
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
