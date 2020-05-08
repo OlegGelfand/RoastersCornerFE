@@ -4,8 +4,11 @@ This will be a place for coffee lovers to unite with roasters from their hometow
  
 
 - [add your github repo link]() 
+
 https://github.com/OlegGelfand/RoastersCornerFE, https://github.com/OlegGelfand/RoastersCornerBE
+
 - [add your deployment link]()
+
 
 ## Project Description
 Full stack App. Designed to be a quiet site, linking roasts from all across the U.S to coffee lovers. Resulting in a nice place to reconnect to your home towns roaster, try something new. and for my drop-ship business to expand.
