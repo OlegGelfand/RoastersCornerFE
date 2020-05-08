@@ -77,8 +77,8 @@ All times below are listed in hours:
 | implement useContext |H|2|0|0|
 | Logic for Roasters page Component | H | 3 | 0 |  0|
 | Create Navbar and Route Components | H | 3 |  0| 0 |
-| Basic Styling | H | 3 | 3 | 3 |
-| Deployment of Frontend | H | 1 | .5 | .5 |
+| Basic Styling | H | 3 | 0 | 0 |
+| Deployment of Frontend | H | 1 | 0 | 0 |
 | Debugging Deployed Frontend | H | 1 | 0 | 0 |
 | Make Site Responsive | H | 3 | 0 | 0 |
 | additional styling via bootstrap | M | 4 | 0 | 0 |
