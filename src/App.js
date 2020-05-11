@@ -1,24 +1,25 @@
-import React from 'react';
+import React from "react";
 import './App.css';
 import Main from './components/Main';
-
+import Coffee from './components/Coffee';
+import Roasters from './components/Roasters';
+import RoastersPage from './components/RoastersPage';
+import { Switch, Route } from "react-router";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <ul>
-        <li>COE Coffee  </li>
+     
+        <Switch>
+        <Route exact={true} path="/" component={Main} />
+        <Route exact path="/roasters" component={Roasters} />
+        <Route exact path="/coffees" component={Coffee} />
+        <Route exact path="/coffees" component={Coffee} />
+        <Route exact path="/roastersPage" component={RoastersPage} />
+        
 
-          <li> keeping you nostalgically caffinated, wherever you are</li>
-          </ul>
 
 
-      </header>
-      <Main/>
-
-      <div className ="render">
-   
-    </div>
+      </Switch>
     </div>
    
   );

@@ -1,20 +1,29 @@
 import React from "react";
 import "../App.css";
-import Example from "./Example";
 import LeftNav from "./LeftNav";
 import RightNav from "./RightNav";
+import Footer from "./Footer";
 
 function Main() {
   return (
     <div>
       <div className="main">
-        <img src="https://media.giphy.com/media/Q6joirtIBHUsw/giphy.gif"></img>
-        <img src="https://www.littlecoffeeplace.com/wp-content/uploads/2018/10/Crema.co-Coffee-Subscription-Review.jpg"></img>
-        </div>
-
-      <Example />
+        <ul>
+          <li>RoastersCorner</li>
+          <li> keeping you nostalgically caffinated, wherever you are</li>
+        </ul>
+        <img
+          className="mainImg"
+          src="https://media.giphy.com/media/Q6joirtIBHUsw/giphy.gif"
+        ></img>
+        <img
+          className="mainImg"
+          src="https://www.littlecoffeeplace.com/wp-content/uploads/2018/10/Crema.co-Coffee-Subscription-Review.jpg"
+        ></img>
+      </div>
       <LeftNav />
       <RightNav />
+      <Footer />
     </div>
   );
 }
