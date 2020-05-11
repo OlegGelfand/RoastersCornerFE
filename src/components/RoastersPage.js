@@ -4,11 +4,11 @@ import {
   deleteRoaster,
   createRoaster,
 } from "../services/apiHelperRoasters";
-import LeftNav from "./LeftNav";
-import RightNav from "./RightNav";
+import SideBars from "./SideBars";
+
 import "../App.css";
 import Header from "./Header";
-
+import { Breakpoint} from "react-socks";
 function RoastersPage() {
   const [roasters, setRoasters] = useState([]);
   const [companyNameInput, setCompanyNameInput] = useState("");
@@ -34,7 +34,7 @@ function RoastersPage() {
           key={index}
           onClick={() => handleDelete(roaster._id)}
         >
-          <ul className="ul">
+          <ul className="roaster-tiles">
             <li>
               Company Name:<span>{roaster.companyName}</span>{" "}
             </li>
@@ -112,9 +112,13 @@ function RoastersPage() {
   };
   return (
     <div className="Roasters">
+      
+        <div>I will render in tablets (iPad, etc...) and everything above (laptops, desktops)</div>
+      
       <Header/>
-    <LeftNav/>
-      <RightNav/>
+        <Breakpoint medium up>
+    <SideBars/>
+      </Breakpoint>
       {/* //create form  */}
       <form onSubmit={handleCreate} className="roasterFormContainer">
         <div>

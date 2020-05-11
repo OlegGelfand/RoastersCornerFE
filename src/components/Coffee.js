@@ -1,14 +1,15 @@
 import React from "react";
 import "../App.css";
-
-import LeftNav from "./LeftNav";
-import RightNav from "./RightNav";
+import Header from "./Header";
+import LeftNav from "./SideBars";
+// import RightNav from "./RightNav";
 
 function Coffee() {
   return (
       <div>
+        <Header/>
           <LeftNav/>
-        <RightNav/>
+        {/* <RightNav/> */}
       
     <div className="coffee">
         

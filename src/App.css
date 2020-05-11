@@ -201,7 +201,7 @@ button {
 }
 .roasterFormContainer {
   
-  width:310px;
+  width:410px;
   align-content: left;
   justify-content: left;
   text-align: center;
@@ -211,7 +211,7 @@ button {
 
 }
 input.input {
-  Width:300px;
+  Width:400px;
   box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2), 0 6px 20px 8px rgba(107, 79, 79),0 6px 2px 0 rgba(0, 0, 0,.5);box-shadow:0 20px 8px 0 rgba(107, 107, 0, 0.2), ;
 }
 a:hover {
@@ -247,4 +247,24 @@ a {
   border: 2px solid black;
   align-items: center;
   background-color: rosybrown;
+}
+.Roasters >li{
+  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2), 0 6px 20px 8px rgba(107, 79, 79),0 6px 2px 0 rgba(0, 0, 0,.5);box-shadow:0 20px 8px 0 rgba(107, 107, 0, 0.2), ;  border: 2px solid black;
+  color:blue;
+  padding-top:20px;
+  padding-bottom: 20px;
+  list-style-type: none;
+  width:500px;
+  align-items: center;
+  text-align: center;
+  margin-left: 400px;
+  margin-bottom:20px; 
+  text-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2), 0 6px 20px 8px rgba(107, 79, 79)
+}
+
+.Roasters {
+  font-size: 20px;
+  margin-left: 0px;
+  
+  
 }

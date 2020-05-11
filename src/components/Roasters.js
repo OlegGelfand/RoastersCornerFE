@@ -1,14 +1,13 @@
 import React, { useEffect, useState} from 'react';
 import { getAllRoasters} from '../services/apiHelperRoasters'
 import '../App.css';
-import LeftNav from './LeftNav';
-import RightNav from './RightNav';
-
+import SideBars from './SideBars';
+import Header from './Header';
 
 function Roasters() {
   
 const [roasters, setRoasters] = useState([])
-
+const [imageInput, setImageInput] = useState("");
   useEffect(() => {
     
     const makeAPICall = async () => {
@@ -23,17 +22,17 @@ const [roasters, setRoasters] = useState([])
     return (
 
       <li key={index}>
-        Company Name:{roaster.companyName}, 
-        City: {roaster.body} {roaster.coffees} {roaster.memberDate},{roaster.numOrders}  
+        Company Name:{roaster.companyName} Image:<img src={roaster.image}></img>
+        {/* City: {roaster.body} {roaster.coffees} {roaster.memberDate},{roaster.numOrders}   */}
       </li>
     );
   });
 
   return (
     <div className="Roasters">
-   
-      <LeftNav/>
-      <RightNav/>
+   <Header/>
+      <SideBars/>
+ 
       ROASTERS
       
       {renderRoasters}

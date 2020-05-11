@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
-import LeftNav from "./LeftNav";
-import RightNav from "./RightNav";
+import SideBars from "./SideBars";
+
 import Footer from "./Footer";
 
 function Main() {
@@ -21,8 +21,7 @@ function Main() {
           src="https://www.littlecoffeeplace.com/wp-content/uploads/2018/10/Crema.co-Coffee-Subscription-Review.jpg"
         ></img>
       </div>
-      <LeftNav />
-      <RightNav />
+      <SideBars />
       <Footer />
     </div>
   );
