@@ -39,7 +39,7 @@ const [imageInput, setImageInput] = useState("");
  
       ROASTERS
       
-      {renderCoffees}
+      {/* {renderCoffees} */}
       
      
     </div>
