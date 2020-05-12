@@ -1,7 +1,8 @@
 import axios from 'axios';
 //axios is a library with a few methods, there to make requests from the back-end. the methods are promises to give response
 const api = axios.create({
-  baseURL: 'http://localhost:8080/'
+  // baseURL: 'http://localhost:8080/'
+  baseURL: 'https://roasterscorner.herokuapp.com/'
 })
 
 export const getAllRoasters = async () => {

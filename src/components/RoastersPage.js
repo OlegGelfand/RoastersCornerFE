@@ -119,6 +119,9 @@ function RoastersPage() {
     // console.log(e.target.value)
     setLocationInput(e.target.value);
   };
+
+  //Coffee Section
+
   return (
     <div className="Roasters">
       
