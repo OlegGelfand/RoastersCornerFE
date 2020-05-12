@@ -3,6 +3,7 @@ import { getAllRoasters} from '../services/apiHelperRoasters'
 import '../App.css';
 import SideBars from './SideBars';
 import Header from './Header';
+import { Breakpoint} from "react-socks";
 
 function Roasters() {
   
@@ -31,7 +32,10 @@ const [imageInput, setImageInput] = useState("");
   return (
     <div className="Roasters">
    <Header/>
-      <SideBars/>
+   <Breakpoint medium up>
+    <SideBars/>
+      </Breakpoint>
+      
  
       ROASTERS
       

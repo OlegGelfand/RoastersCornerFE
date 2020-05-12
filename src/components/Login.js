@@ -1,5 +1,9 @@
 import React from 'react';
 import "../App.css";
+import SideBars from "./SideBars";
+import Header from "./Header";
+import Footer from "./Footer";
+import { Breakpoint} from "react-socks";
 
 function Login() {
  
@@ -8,7 +12,11 @@ function Login() {
       <div className="login">
         <button></button>
         <button></button>
-     
+     <Header/>
+     <Breakpoint medium up>
+    <SideBars/>
+      </Breakpoint>
+     <Footer/>
       </div>
  
   );

@@ -1,27 +1,31 @@
 import React from "react";
 import "../App.css";
 import SideBars from "./SideBars";
-
+import Header from "./Header";
 import Footer from "./Footer";
+import { Breakpoint} from "react-socks";
 
 function Main() {
   return (
-    <div>
-      <div className="main">
-        <ul>
-          <li>RoastersCorner</li>
-          <li> keeping you nostalgically caffinated, wherever you are</li>
-        </ul>
-        <img
-          className="mainImg"
-          src="https://media.giphy.com/media/Q6joirtIBHUsw/giphy.gif"
-        ></img>
-        <img
-          className="mainImg"
-          src="https://www.littlecoffeeplace.com/wp-content/uploads/2018/10/Crema.co-Coffee-Subscription-Review.jpg"
-        ></img>
+    <div className="images">
+      <Header />
+      <Breakpoint medium up>
+    <SideBars/>
+      </Breakpoint>
+      <div className="title">RoastersCorner</div>
+      <div className="square">
+        <button className="mainSquare">
+          <div>
+            Welcome to Roasters Corner. We are partnered with many roasters
+            across the United States and please{" "}
+            <span>click on this image to see a full list of our Roasts</span>
+          </div>
+        </button>
+        <button className="mainSquare">
+          <div>b</div>
+        </button>
       </div>
-      <SideBars />
+
       <Footer />
     </div>
   );

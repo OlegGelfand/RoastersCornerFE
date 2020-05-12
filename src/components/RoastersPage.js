@@ -9,6 +9,7 @@ import SideBars from "./SideBars";
 import "../App.css";
 import Header from "./Header";
 import { Breakpoint} from "react-socks";
+
 function RoastersPage() {
   const [roasters, setRoasters] = useState([]);
   const [companyNameInput, setCompanyNameInput] = useState("");
@@ -16,6 +17,8 @@ function RoastersPage() {
   const [descriptionNewInput, setDescriptionNewInput] = useState("");
   const [memberDateInput, setMemberDateInput] = useState("");
   const [imageInput, setImageInput] = useState("");
+  const [coffeeInput, setCoffeeInput] =useState("");
+  const [location, setLocationInput] = useState("");
 
   useEffect(() => {
     const makeAPICall = async () => {
@@ -36,10 +39,10 @@ function RoastersPage() {
         >
           <ul className="roaster-tiles">
             <li>
-              Company Name:<span>{roaster.companyName}</span>{" "}
+              Company Name:<span>{roaster.companyName}</span>
             </li>
             <li>
-              Location:<span>{roaster.location}</span>
+              location:<span>{roaster.location}</span>
             </li>
             <li>
               Description:<span>{roaster.body}</span>
@@ -82,6 +85,7 @@ function RoastersPage() {
       companyName: companyNameNewInput,
       image: imageInput,
       body: descriptionNewInput,
+      location: location,
 
       // image: descriptionNewInput,
     });
@@ -91,6 +95,7 @@ function RoastersPage() {
       setCompanyNameNewInput("");
       setDescriptionNewInput("");
       setImageInput("");
+      setLocationInput("");
     }
   };
 
@@ -110,10 +115,14 @@ function RoastersPage() {
     // console.log(e.target.value)
     setImageInput(e.target.value);
   };
+  const handleCreateLocation = (e) => {
+    // console.log(e.target.value)
+    setLocationInput(e.target.value);
+  };
   return (
     <div className="Roasters">
       
-        <div>I will render in tablets (iPad, etc...) and everything above (laptops, desktops)</div>
+    
       
       <Header/>
         <Breakpoint medium up>
@@ -124,13 +133,14 @@ function RoastersPage() {
         <div>
 
           <p>Welcome insert your information here</p>
-          <label>Member Since</label>
-          <input
+          {/* <label>Member Since</label> */}
+          {/* <input
             className="input"
             type="text"
             onChange={handleCreateMemberDateChange}
             value={memberDateInput}
-          ></input>
+          ></input> */}
+          {memberDateInput}
         </div>
         <div>
           <label>Company Name: </label>
@@ -140,7 +150,7 @@ function RoastersPage() {
             onChange={handleCreateCompanyNameChange}
             value={companyNameNewInput}
           ></input>
-        </div>
+              </div>
         <div>
           <label>Image: </label>
           <input
@@ -149,7 +159,7 @@ function RoastersPage() {
             onChange={handleCreateImage}
             value={imageInput}
           ></input>
-          {/* <br></br> */}
+
         </div>
         <div>
           <label> Place Description here </label>
@@ -158,6 +168,16 @@ function RoastersPage() {
             type="text"
             onChange={handleCreateDescriptionChange}
             value={descriptionNewInput}
+          ></input>
+          <br />
+        </div>
+        <div>
+          <label> City, State of Roaster </label>
+          <input
+            className="input"
+            type="text"
+            onChange={handleCreateLocation}
+            value={location}
           ></input>
           <br />
         </div>

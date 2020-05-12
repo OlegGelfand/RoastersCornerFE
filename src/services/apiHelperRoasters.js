@@ -17,8 +17,17 @@ export const getAllRoasters = async () => {
       const resp = await api.post('/roasters', roaster)
       return resp.data
   }
-//   export const getAllCoffees = async () => {
-//     const resp = await api.get('/coffees/')
-//     console.log('apihelper getallCoffees',resp)
-//     return resp.data
-//   }
+  export const getAllCoffees = async () => {
+    const resp = await api.get('/coffees/')
+    console.log('apihelper getallCoffees',resp)
+    return resp.data
+  }
+  export const createCoffee = async (coffee) => {
+    const resp = await api.post('/coffees', coffee)
+    return resp.data
+}
+//need to change parameter on back end to name
+export const deleteCoffee = async (name) => {
+  const resp  = await api.delete(`/roasters/${name}`)
+  return resp.data
+}
