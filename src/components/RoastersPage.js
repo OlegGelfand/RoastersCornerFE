@@ -17,7 +17,6 @@ function RoastersPage() {
   const [descriptionNewInput, setDescriptionNewInput] = useState("");
   const [memberDateInput, setMemberDateInput] = useState("");
   const [imageInput, setImageInput] = useState("");
-  const [coffeeInput, setCoffeeInput] =useState("");
   const [location, setLocationInput] = useState("");
 
   useEffect(() => {
@@ -47,9 +46,7 @@ function RoastersPage() {
             <li>
               Description:<span>{roaster.body}</span>
             </li>
-            <li>
-              Coffee:<span>{roaster.coffees}</span>
-            </li>
+      
 
             <li> Date:{roaster.memberDate}</li>
             <li>{roaster.numOrders}</li>
@@ -61,10 +58,7 @@ function RoastersPage() {
     );
   });
 
-  const handleCompanyNameChange = (e) => {
-    // console.log(e.target.value)
-    setCompanyNameInput(e.target.value);
-  };
+
   const handleDelete = async (id) => {
     const json = await deleteRoaster(id);
     console.log("handleDelete - json", json);
@@ -73,11 +67,7 @@ function RoastersPage() {
       setRoasters(roastersArr);
     }
   };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(companyNameInput);
-    // e.target.value
-  };
+ 
   const handleCreate = async (e) => {
     e.preventDefault();
     const json = await createRoaster({
@@ -103,10 +93,7 @@ function RoastersPage() {
     console.log(e.target.value);
     setCompanyNameNewInput(e.target.value);
   };
-  const handleCreateMemberDateChange = (e) => {
-    console.log(e.target.value);
-    setMemberDateInput(e.target.value);
-  };
+
   const handleCreateDescriptionChange = (e) => {
     console.log(e.target.value);
     setDescriptionNewInput(e.target.value);

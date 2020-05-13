@@ -1,12 +1,10 @@
 .App {
   text-align: center;
-  
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-  
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,28 +13,16 @@
   }
 }
 
-/* .App-header {
-
-  background-color: #282c34;
-  min-height: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color:rgba(0, 0, 0,.5);
-  background-color:lightblue
-  
-} */
-ul li{
+ul li {
   display: flex;
   flex-direction: row;
-  color:white;
+  color: white;
   list-style-type: none;
-  width:100%;
+  width: 100%;
   word-spacing: 5px;
 }
-ul li:last-of-type{
-  float:right;
+ul li:last-of-type {
+  float: right;
   text-align: right;
 }
 h4 {
@@ -44,49 +30,55 @@ h4 {
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-left: 20px;
-  color:rgba(0,0,0,.4);
-  
+  color: rgba(0, 0, 0, 0.4);
 }
-.navTop{
+.navTop {
   text-align: right;
 }
-
-/* body{
-  background-color: aliceblue;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-position: center;
-} */
 .main {
   display: flex;
   flex-direction: row;
   /* justify-content: center; */
-  background-color: #936B6C;
-  background-color: rgba(150,100,100,.3);
+  background-color: #936b6c;
+  background-color: rgba(150, 100, 100, 0.3);
   border-radius: 5%;
-  margin-bottom:20px;
-  margin-top:20px;
-  margin-left:10px;
-  margin-right:10px;
-
-  height:120px;
-  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2), 0 6px 20px 8px rgba(107, 79, 79),0 6px 2px 0 rgba(0, 0, 0,.5);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 120px;
+  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2),
+    0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0, 0.5);
 }
 .mainImg {
   border-radius: 20%;
-  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2), 0 6px 20px 8px rgba(107, 79, 79),0 6px 2px 0 rgba(0, 0, 0,.5);
-  opacity:80%;
+  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2),
+    0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0, 0.5);
+  opacity: 80%;
 }
 h2 {
-  color:white;
-  background-color:brown;
-  opacity:.8;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: -55px;
+  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2),
+    0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2);
+  height:50px;
+  padding-top:70px;
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
+  text-align: center;
 }
-img:nth-of-type(){
+.mobile-vine {
+  z-index: 23;
+  height: 50px;
+  width: 50%;
+}
+img:nth-of-type() {
   float: right;
 }
 img {
-  height:120px;
+  height: 120px;
   border-radius: 5%;
   opacity: 80%;
 }
@@ -94,86 +86,80 @@ img {
 .left-nav {
   float: left;
   height: 100vh;
-  width:10%;
+  width: 10%;
   /* background-color: grey; */
   /* border-style: double; */
   /* border-color:aliceblue; */
-  border-radius:10px;
+  border-radius: 10px;
   /* border-collapse: collapse; */
-  background-image:  url("https://camanoislandcoffee.com/wp-content/uploads/2015/12/Coffee-Strength-vs-Roast.jpg");
-  background-position: 100px ;
-  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2), 0 6px 20px 0 rgba(107, 79, 79);
-  margin-left:40px;
-  margin-top:150px;
-  
-
-  
+  background-image: url("https://camanoislandcoffee.com/wp-content/uploads/2015/12/Coffee-Strength-vs-Roast.jpg");
+  background-position: 100px;
+  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2),
+    0 6px 20px 0 rgba(107, 79, 79);
+  margin-left: 40px;
+  margin-top: 150px;
 }
 .left-nav li {
   list-style-type: none;
-  color:white;
-  line-height:30px;
+  color: white;
+  line-height: 30px;
   font-weight: 900;
-  margin-right:30px;
-  
+  margin-right: 30px;
 }
 .right-nav {
   float: right;
   height: 100vh;
-  border-radius:10px;
-  width:10%;
-  margin-right:10px;
+  border-radius: 10px;
+  width: 10%;
+  margin-right: 10px;
   background-image: url("https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/4423621/910/607/m2/fpnw/wm0/_mg_7215-.jpg?1525810534&s=439e5f3411eea8423e3e14a68a292f28");
-  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2), 0 6px 20px 0 rgba(107, 79, 79),0 6px 2px 0 rgba(255, 255, 79);
+  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2),
+    0 6px 20px 0 rgba(107, 79, 79), 0 6px 2px 0 rgba(255, 255, 79);
   margin-right: 40px;
-  margin-top:150px;
-
+  margin-top: 150px;
 }
 .App-link {
   color: #61dafb;
-  
 }
-.title{
-  margin-top:40px;
-  font-family: 'Source Code Pro', monospace;
+.title {
+  margin-top: 40px;
+  font-family: "Source Code Pro", monospace;
   font-size: 40px;
   font-weight: bold;
   letter-spacing: 10px;
 }
 .footer {
   position: fixed;
-  bottom:0;
+  bottom: 0;
   width: 100%;
   height: 50px;
   background-color: black;
 }
-.square{
-  color:white;
-  margin-top:180px;
+.square {
+  color: white;
+  margin-top: 180px;
   background-color: gray;
-  width:800px;
-  height:500px;
+  width: 800px;
+  height: 500px;
   margin-left: 300px;
   display: flex;
   background-image: url("https://www.thoughtco.com/thmb/rkMuni0DYnhjO94mqy5fzbRxDXU=/2233x1256/smart/filters:no_upscale()/GettyImages-936840910-5c8ea8b2c9e77c0001ff0ae6.jpg");
   background-size: 120%;
-
 }
 .mainSquare {
-  color:black;
+  color: black;
   flex: 1;
   flex-direction: row;
-  width:100px;
-  border:2px solid black;
-  margin:20px;
-  opacity: .6;
+  width: 100px;
+  border: 2px solid black;
+  margin: 20px;
+  opacity: 0.6;
   background-color: white;
-  
-
 }
-.logo{
-width:70px;
-height:70px;
+
+.logo {
+  width: 70px;
+  height: 70px;
 }
 Example {
   margin-right: 40%;
@@ -186,71 +172,71 @@ Example {
     transform: rotate(360deg);
   }
 }
-li >span {
-  color:blue;
+li > span {
+  color: blue;
 }
 .card {
-  display:grid;
-  margin-left:20px;
-  width:300px;
-  padding-left:20px;
+  display: grid;
+  margin-left: 20px;
+  width: 300px;
+  padding-left: 20px;
   grid-template-columns: 3 2fr;
   grid-template-rows: 3 1fr;
-  grid-gap:20px;
+  grid-gap: 20px;
   border: 2px solid black;
 }
 .roasterData {
-  box-shadow: 0 17px 8px 0 rgba(107, 107, 0, 0.2), 0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0,.5);  /* margin-left: 40%; */
+  box-shadow: 0 17px 8px 0 rgba(107, 107, 0, 0.2),
+    0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0, 0.5); /* margin-left: 40%; */
   align-items: center;
   justify-content: center;
   align-content: center;
   display: inline-block;
   width: 400px;
   margin: 11px 20px;
-  
 }
 div.roasterInfo {
-  width:500px;
+  width: 500px;
   z-index: 2;
-  margin-top:-40px;
+  margin-top: -40px;
 }
-.login-buttons{
+.login-buttons {
   border-radius: 2%;
-  border:1px solid white;
-  padding:2px;
+  border: 1px solid white;
+  padding: 2px;
 }
-ul{
+ul {
   grid-template-columns: repeat(2, 1fr);
   align-items: left;
   text-align: left;
   font-weight: 900;
-  background-image:url(https://www.sierrarizing.com/assets/espresso-drink-780x418.jpg);
-  opacity: .6;
-  
+  background-image: url(https://www.sierrarizing.com/assets/espresso-drink-780x418.jpg);
+  opacity: 0.6;
 }
 button {
-  color:black;
-  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2), 0 6px 20px 8px rgba(107, 79, 79),0 6px 2px 0 rgba(0, 0, 0,.5);
+  color: black;
+  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2),
+    0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0, 0.5);
   /* border-radius: 15%; */
   font-size: 16px;
   /* background-color: rgba(255, 255, 255,0.8); */
-  margin-top:10px;
+  margin-top: 10px;
   z-index: 0;
 }
 .roasterFormContainer {
-  
-  width:410px;
+  width: 410px;
   align-content: left;
   justify-content: left;
   text-align: center;
   margin-left: 40%;
-  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2), 0 6px 20px 8px rgba(107, 79, 79),0 6px 2px 0 rgba(0, 0, 0,.5);
-  
-
+  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2),
+    0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0, 0.5);
 }
 input.input {
-  Width:400px;
-  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2), 0 6px 20px 8px rgba(107, 79, 79),0 6px 2px 0 rgba(0, 0, 0,.5);box-shadow:0 20px 8px 0 rgba(107, 107, 0, 0.2), ;
+  width: 400px;
+  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2),
+    0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2);
 }
 a:hover {
   color: rgba(0, 0, 200, 0.5);
@@ -261,17 +247,16 @@ a {
   display: flexbox;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-bottom:0px;
+  margin-bottom: 0px;
   text-decoration: none;
   font-weight: 900;
   text-transform: uppercase;
   z-index: 10;
   font-size: 14px;
-  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2), 0 6px 20px 8px rgba(107, 79, 79),0 6px 2px 0 rgba(0, 0, 0,.5);box-shadow:0 20px 8px 0 rgba(107, 107, 0, 0.2), ;
-
+  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2),
+    0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2);
 }
-
-
 
 .nav {
   color: white;
@@ -280,21 +265,22 @@ a {
   justify-content: space-evenly;
   /* z-index: 12; */
   text-align: left;
-  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2), 0 6px 20px 8px rgba(107, 79, 79),0 6px 2px 0 rgba(0, 0, 0,.5);box-shadow:0 20px 8px 0 rgba(107, 107, 0, 0.2), ;
+  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2),
+    0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2);
   /* background-color: rgba(0, 0, 0, .2); */
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 2%;
   height: 50px;
   position: relative;
-  margin-top:-50px;
+  margin-top: -50px;
   left: 0;
-
 }
 
-.vine{
+.vine {
   z-index: 23;
-  height:50px;
-  width:50%;
+  height: 50px;
+  width: 50%;
   /* position: relative; */
   /* left: 0; */
   /* border: 1px red solid; */
@@ -305,23 +291,49 @@ a {
   align-items: center;
   background-color: rosybrown;
 }
-.Roasters >li{
-  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2), 0 6px 20px 8px rgba(107, 79, 79),0 6px 2px 0 rgba(0, 0, 0,.5);box-shadow:0 20px 8px 0 rgba(107, 107, 0, 0.2), ;  border: 2px solid black;
-  color:blue;
-  padding-top:20px;
+.Roasters > li {
+  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2),
+    0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2);
+  border: 2px solid black;
+  color: blue;
+  padding-top: 20px;
   padding-bottom: 20px;
   list-style-type: none;
-  width:500px;
+  width: 25%;
   align-items: center;
   text-align: center;
-  margin-left: 400px;
-  margin-bottom:20px; 
-  text-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2), 0 6px 20px 8px rgba(107, 79, 79)
+  margin-left: 20%;
+  margin-bottom: 20px;
+  text-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2),
+    0 6px 20px 8px rgba(107, 79, 79);
 }
 
 .Roasters {
   font-size: 20px;
-  margin-left: 0px;
-  
-  
+  /* margin-left: 0px; */
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: gray;
+  overflow: hidden;
 }

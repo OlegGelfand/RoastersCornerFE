@@ -8,7 +8,7 @@ import { Breakpoint} from "react-socks";
 function Coffee() {
   
 const [coffees, setCoffees] = useState([])
-const [imageInput, setImageInput] = useState("");
+const [companyNameInput, setCompanyNameInput] = useState("");
   useEffect(() => {
     
     const makeAPICall = async () => {
@@ -21,11 +21,10 @@ const [imageInput, setImageInput] = useState("");
 
   const renderCoffees = coffees.map((coffee, index) => {
     return (
-<h1></h1>
-      // <li key={index}>
-      //   Company Name:{roaster.companyName} Image:<img src={roaster.image}></img>
-      //   {/* City: {roaster.body} {roaster.coffees} {roaster.memberDate},{roaster.numOrders}   */}
-      // </li>
+      <li key={index}>
+        Coffee Name:{coffee.companyName} Description:<img src={coffee.body}></img>
+        
+      </li>
     );
   });
 
@@ -39,7 +38,7 @@ const [imageInput, setImageInput] = useState("");
  
       ROASTERS
       
-      {/* {renderCoffees} */}
+      {renderCoffees}
       
      
     </div>

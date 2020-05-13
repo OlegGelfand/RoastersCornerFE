@@ -24,7 +24,6 @@ const [imageInput, setImageInput] = useState("");
 
       <li key={index}>
         Company Name:{roaster.companyName} Image:<img src={roaster.image}></img>
-        {/* City: {roaster.body} {roaster.coffees} {roaster.memberDate},{roaster.numOrders}   */}
       </li>
     );
   });
