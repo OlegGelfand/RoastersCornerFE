@@ -15,8 +15,9 @@
 
 ul li {
   display: flex;
-  flex-direction: row;
-  color: white;
+  /* flex-direction: row; */
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   list-style-type: none;
   width: 100%;
   word-spacing: 5px;
@@ -73,6 +74,7 @@ h2 {
   z-index: 23;
   height: 50px;
   width: 50%;
+  margin-top: -70px;
 }
 img:nth-of-type() {
   float: right;
@@ -80,7 +82,7 @@ img:nth-of-type() {
 img {
   height: 120px;
   border-radius: 5%;
-  opacity: 80%;
+  /* opacity: 80%; */
 }
 
 .left-nav {
@@ -192,8 +194,9 @@ li > span {
   justify-content: center;
   align-content: center;
   display: inline-block;
-  width: 400px;
-  margin: 11px 20px;
+  /* width: 30%; */
+  margin: 20px;
+  margin-right:20px;
 }
 div.roasterInfo {
   width: 500px;
@@ -210,7 +213,7 @@ ul {
   align-items: left;
   text-align: left;
   font-weight: 900;
-  background-image: url(https://www.sierrarizing.com/assets/espresso-drink-780x418.jpg);
+  /* background-image: url(https://www.sierrarizing.com/assets/espresso-drink-780x418.jpg); */
   opacity: 0.6;
 }
 button {
@@ -224,19 +227,26 @@ button {
   z-index: 0;
 }
 .roasterFormContainer {
-  width: 410px;
-  align-content: left;
-  justify-content: left;
-  text-align: center;
-  margin-left: 40%;
+  /* border-radius: 5%; */
+  width: 60%;
+  align-content: center;
+  justify-content: center;
+  text-align:left;
+  padding-left: 10px;
+  margin-left: 20%;
+  margin-right:20%;
   box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2),
     0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0, 0.5);
 }
 input.input {
-  width: 400px;
+  /* width: 80%; */
   box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2),
     0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2);
+  padding-left:15%;
+}
+input {
+  width:80%;
 }
 a:hover {
   color: rgba(0, 0, 200, 0.5);
@@ -311,7 +321,12 @@ a {
 
 .Roasters {
   font-size: 20px;
+  flex:1;
+  /* display: flex; */
   /* margin-left: 0px; */
+}
+.roaster-boxes {
+  display:flex;
 }
 
 .accordion {

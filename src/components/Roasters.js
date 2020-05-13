@@ -29,6 +29,7 @@ const [imageInput, setImageInput] = useState("");
   });
 
   return (
+    <div className="roaster-boxes">
     <div className="Roasters">
    <Header/>
    <Breakpoint medium up>
@@ -39,7 +40,7 @@ const [imageInput, setImageInput] = useState("");
       ROASTERS
       
       {renderRoasters}
-      
+      </div>
      
     </div>
   );
