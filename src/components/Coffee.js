@@ -22,7 +22,7 @@ const [companyNameInput, setCompanyNameInput] = useState("");
   const renderCoffees = coffees.map((coffee, index) => {
     return (
       <li key={index}>
-        Coffee Name:{coffee.companyName} Description:<img src={coffee.body}></img>
+        Coffee Name:{coffee.coffeeName} Roast Type: 
         
       </li>
     );
@@ -36,7 +36,7 @@ const [companyNameInput, setCompanyNameInput] = useState("");
       </Breakpoint>
       
  
-      ROASTERS
+   
       
       {renderCoffees}
       

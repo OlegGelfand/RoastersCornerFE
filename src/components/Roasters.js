@@ -30,7 +30,7 @@ const [imageInput, setImageInput] = useState("");
 
   return (
     <div className="roaster-boxes">
-    <div className="Roasters">
+    <div className="roasters-main-page">
    <Header/>
    <Breakpoint medium up>
     <SideBars/>
