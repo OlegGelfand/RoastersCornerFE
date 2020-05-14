@@ -49,10 +49,10 @@ function RoastersPage(props) {
           
             Company Name:{roaster.companyName}
             location:{roaster.location}
-            numOrders:{roaster.numOrders}
+            {/* numOrders:{roaster.numOrders} */}
 
-         Date:{roaster.memberDate}
-        {roaster.numOrders}
+         {/* Date:{roaster.memberDate} */}
+        {/* {roaster.numOrders} */}
           <img src={roaster.image} alt="users"></img>
 
           <i class="fas fa-minus-circle"></i>
@@ -210,9 +210,9 @@ function RoastersPage(props) {
             ></input>
           </div>
           
-            <button type="reset" value="Reset">reset</button>
-          <button type="submit">Submit</button>
-          <button id="myBtn" class="dropbtn">
+            <button className="submit" type="reset" value="Reset">reset</button>
+          <button className= "submit">Submit</button>
+          <button id="myBtn" className="dropbtn">
            <br></br>
             <Link className="coffeeLink" to="/coffeePage">
               <p>Click here if you 

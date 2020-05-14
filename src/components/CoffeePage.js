@@ -160,7 +160,7 @@ function CoffeesPage() {
           <br />
         </div>
      
-        <button type="submit">Submit</button>
+        <button className ="submit" type="submit">Submit</button>
       </form>
       
       {renderCoffees}
