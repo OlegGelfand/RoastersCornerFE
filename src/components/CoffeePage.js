@@ -12,7 +12,7 @@ import { Breakpoint} from "react-socks";
 
 function CoffeesPage() {
   const [coffees, setCoffees] = useState([]);
-  const [coffeeNameInput, setCoffeeNameInput] = useState("");
+  // const [coffeeNameInput, setCoffeeNameInput] = useState("");
   const [coffeeNameNewInput, setCoffeeNameNewInput] = useState("");
   const [descriptionNewInput, setDescriptionNewInput] = useState("");
   const [roastType, setRoastType] = useState("");
@@ -30,34 +30,29 @@ function CoffeesPage() {
   const renderCoffees = coffees.map((coffee, index) => {
     return (
      
-        <div
-          className="coffeeData"
-          key={index}
-          onClick={() => handleDelete(coffee._id)}
-        >
-          <ul className="coffee-tiles">
-            <li>
-              Coffee Name:<span>{coffee.coffeeName}</span>
-            </li>
-            <li>
-              Body:<span>{coffee.body}</span>
-            </li>
-            <li>
-              Packaging Sizes:<span>{coffee.availableIn}</span>
-            </li>
-            <li>
-              Roast Type<span>{coffee.roastType}</span>
-            </li>
-          </ul>
-        </div>
+        <div className="roasters-page-parent">
+        <div className="roasters-page-child" key={index} onClick={() => handleDelete(coffee._id)}>
+         
+            <div className="roaster-pg-data">
+            <div className="roaster-name">
+              Coffee Name:{coffee.coffeeName}
+              Body:{coffee.body}
+              Packaging Sizes:{coffee.availableIn}
+              Roast Type{coffee.roastType}
+            </div>
+            </div>
+            <i class="fas fa-minus-circle"></i>
+          </div>
+          </div>
+     
         
     );
   });
 
-  const handleCompanyNameChange = (e) => {
-    // console.log(e.target.value)
-    setCoffeeNameInput(e.target.value);
-  };
+  // const handleCompanyNameChange = (e) => {
+  //   // console.log(e.target.value)
+  //   setCoffeeNameInput(e.target.value);
+  // };
   const handleDelete = async (id) => {
     const json = await deleteCoffee(id);
     console.log("handleDelete - json", json);
@@ -66,11 +61,11 @@ function CoffeesPage() {
       setCoffees(coffeesArr);
     }
   };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(coffeeNameInput);
-    // e.target.value
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log(coffeeNameInput);
+  //   // e.target.value
+  // };
   const handleCreate = async (e) => {
     e.preventDefault();
     const json = await createCoffee({

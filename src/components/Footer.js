@@ -1,7 +1,7 @@
 import React from 'react';
 import "../App.css";
 import { Link } from "react-router-dom";
-import { Breakpoint} from "react-socks";
+// import { Breakpoint} from "react-socks";
 function Footer() {
  
   return (
@@ -9,7 +9,7 @@ function Footer() {
       <div className="footer">
         {/* <button></button>
         <button></button> */}
-     <img className="vine" src="https://i.ya-webdesign.com/images/vines-border-png-5.png"></img>
+     <img className="vine" src="https://i.ya-webdesign.com/images/vines-border-png-5.png" alt="vine"></img>
             <div className="nav">
 {/*            
               <Link className="home" to="/">

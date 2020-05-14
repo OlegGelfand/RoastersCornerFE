@@ -76,16 +76,17 @@ h2 {
   width: 50%;
   margin-top: -70px;
 }
-img:nth-of-type() {
+/* img:nth-of-type() {
   float: right;
 }
 img {
   height: 120px;
   border-radius: 5%;
   /* opacity: 80%; */
-}
+/* }  */
 
 .left-nav {
+  position:relative;
   float: left;
   height:150vh;
   width: 10%;
@@ -109,6 +110,9 @@ img {
   margin-right: 30px;
 }
 .right-nav {
+  /* position:fixed; */
+  position: relative;
+  /* background-position-y: center; */
   float: right;
   height: 150vh;
   border-radius: 10px;
@@ -143,7 +147,7 @@ img {
   background-color: gray;
   width: 60%;
   height: 500px;
-  margin-left: 300px;
+  margin-left: 20%;
   display: flex;
   background-image: url("https://www.thoughtco.com/thmb/rkMuni0DYnhjO94mqy5fzbRxDXU=/2233x1256/smart/filters:no_upscale()/GettyImages-936840910-5c8ea8b2c9e77c0001ff0ae6.jpg");
   background-size: 120%;
@@ -224,7 +228,7 @@ button {
   font-size: 16px;
   /* background-color: rgba(255, 255, 255,0.8); */
   margin-top: 10px;
-  z-index: 0;
+  /* z-index: 0; */
 }
 .roasterFormContainer {
   /* border-radius: 5%; */
@@ -380,7 +384,7 @@ a {
   text-align: left;
   outline: none;
   font-size: 15px;
-  transition: 0.4s;
+  transition: 2s;
 }
 
 .active, .accordion:hover {
@@ -400,4 +404,95 @@ a {
 
 .feedback{
   margin-top:100px;
+}
+
+
+
+
+li {
+  list-style-type:none;
+}
+
+/* #myBtn {
+  float:left;
+margin-top:5%;
+align-content: center;
+
+} */
+.roasters-page-child{
+  /* border: 2px solid black; */
+  /* display: grid; */
+  /* grid-auto-rows: 100px; */
+  /* grid-auto-columns:50px; */
+  /* grid-template-columns: repeat(2,1fr); */
+  grid-gap:20px;
+
+}
+.roaster-pg-data{
+  color:black;
+  /* display: grid; */
+  /* grid-template-columns: 30% 30%; */
+ 
+  /* width:50%; */
+}
+div .roaster-name{
+  display:flexbox;
+  flex-direction: column;
+  background-color: rgba(107, 79, 79,.8);
+  color:black;
+  font-size: 30px;
+  box-shadow: 0px 0px 0px 0 rgba(107, 107, 0, 0.2),
+  0px -10px 20px 20px rgba(107, 79, 79);
+  border-radius: 5%;
+}
+div .roaster-image {
+  width:100%;
+  box-shadow: 0 0px 0px 0 rgba(107, 107, 0, 0.2),
+  0 6px 20px 28px rgba(107, 79, 79);
+}
+.roasters-page-parent{
+  margin-top:120px;
+  margin-right:20px;
+  margin-left:20px;
+  width:30%;
+  display:inline-grid;
+  grid-template-columns: repear(3, 1fr);
+  grid-gap:20px;
+}
+/* .roasterByName{
+border: 2px solid blue;
+} */
+
+@media screen and (max-width: 320px){
+  .title{
+    display: none;
+  }
+
+ 
+  .roaster-pg-data{
+    color:black;
+  }
+  div .roaster-name{
+    
+    color:white;
+    font-size: 20px;
+    height:100%;
+    box-shadow: 0px 0px 0px 0 rgba(107, 107, 0, 0.2),
+    0px -10px 20px 10px rgba(107, 79, 79);
+    border-radius: 0;
+    padding-bottom:20px;
+    padding-top:20px;
+  }
+  div .roaster-image {
+    width:100%;
+    box-shadow: 0 0px 0px 0 rgba(107, 107, 0, 0.2),
+    0 6px 20px 28px rgba(107, 79, 79);
+  }
+  .roasters-page-parent{
+    margin-top:30px;
+    margin-right:20px;
+    margin-left:20px;
+    width:stretch;
+  
+  }
 }

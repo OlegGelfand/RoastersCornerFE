@@ -6,12 +6,15 @@ import Footer from "./Footer";
 import { Breakpoint } from "react-socks";
 
 function Main() {
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
   return (
     <div className="images">
       <Header />
       <Breakpoint medium up>
         <SideBars />
-      </Breakpoint>
+      
       <div className="title">RoastersCorner</div>
       <div className="square">
         <button className="mainSquare">
@@ -36,7 +39,7 @@ function Main() {
           </div>
         </button>
       </div>
-      
+      </Breakpoint>
       <Footer />
     </div>
   );

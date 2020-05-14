@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useEffect, useState } from "react";
 import {
   getAllRoasters,
   deleteRoaster,
@@ -8,12 +8,15 @@ import SideBars from "./SideBars";
 import "../App.css";
 import Header from "./Header";
 import { Breakpoint } from "react-socks";
-import CoffeePage from "./CoffeePage";
 import { Link } from "react-router-dom";
 
-function RoastersPage() {
+
+
+
+
+function RoastersPage(props) {
   const [roasters, setRoasters] = useState([]);
-  const [companyNameInput, setCompanyNameInput] = useState("");
+  // const [companyNameInput, setCompanyNameInput] = useState("");
   const [companyNameNewInput, setCompanyNameNewInput] = useState("");
   const [descriptionNewInput, setDescriptionNewInput] = useState("");
   const [memberDateInput, setMemberDateInput] = useState("");
@@ -30,44 +33,43 @@ function RoastersPage() {
     makeAPICall();
   }, []);
 
-  //BOTH RENDERS
+
   const renderRoasters = roasters.map((roaster, index) => {
     return (
+
+<div className="roasters-page-parent">
       <div
-        className="roasterData"
+        className="roasters-page-child"
         key={index}
         onClick={() => handleDelete(roaster._id)}
+        
       >
-        <ul className="roaster-tiles">
-          <li>
-            Company Name:<span>{roaster.companyName}</span>
-          </li>
-          <li>
-            location:<span>{roaster.location}</span>
-          </li>
-          <li>
-            Description:<span>{roaster.body}</span>
-          </li>
-          <li>
-            numOrders:<span>{roaster.numOrders}</span>
-          </li>
+        <div className="roaster-pg-data">
+            <div className="roaster-name">
+          
+            Company Name:{roaster.companyName}
+            location:{roaster.location}
+            numOrders:{roaster.numOrders}
 
-          <li> Date:{roaster.memberDate}</li>
-          <li>{roaster.numOrders}</li>
-          <img src={roaster.image}></img>
-          <i className="fa fa-trash pull-right" />
-        </ul>
+         Date:{roaster.memberDate}
+        {roaster.numOrders}
+          <img src={roaster.image} alt="users"></img>
+
+          <i class="fas fa-minus-circle"></i>
+          </div>
+        </div>
+      </div>
       </div>
     );
   });
 
   // UNUSED HANDLECHANGE
-  const handleCoffeeNameChange = (e) => {
-    // console.log(e.target.value)
-    setCompanyNameInput(e.target.value);
-  };
+  // const handleCoffeeNameChange = (e) => {
+  //   // console.log(e.target.value)
+  //   setCompanyNameInput(e.target.value);
+  // };
 
-  //BOTH DELETES
+  //DELETE
   const handleDelete = async (id) => {
     const json = await deleteRoaster(id);
     console.log("handleDelete - json", json);
@@ -78,11 +80,11 @@ function RoastersPage() {
   };
 
   //UNUSED SUBMITS
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(companyNameInput);
-    // e.target.value
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log(companyNameInput);
+  //   // e.target.value
+  // };
 
   // BOTH CREATE
   const handleCreate = async (e) => {
@@ -114,10 +116,10 @@ function RoastersPage() {
       console.log(e.target.value);
       setCompanyNameNewInput(e.target.value);
     };
-    const handleCreateMemberDateChange = (e) => {
-      console.log(e.target.value);
-      setMemberDateInput(e.target.value);
-    };
+    // const handleCreateMemberDateChange = (e) => {
+    //   console.log(e.target.value);
+    //   setMemberDateInput(e.target.value);
+    // };
     const handleCreateDescriptionChange = (e) => {
       console.log(e.target.value);
       setDescriptionNewInput(e.target.value);
@@ -132,9 +134,9 @@ function RoastersPage() {
     };
 
     // Function for createcoffee form
-    // function myFunction() {
-    //   document.getElementById("myDropdown").classList.toggle("show");
-    // }
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
   
     return (
       <div className="Roasters">
@@ -161,6 +163,7 @@ function RoastersPage() {
               className="input"
               type="text"
               onChange={handleCreateCompanyNameChange}
+              placeholder="Insert Company Name Here"
               value={companyNameNewInput}
             ></input>
           </div>
@@ -170,6 +173,7 @@ function RoastersPage() {
               className="input"
               type="text"
               onChange={handleCreateImage}
+              placeholder="Please provide a jpg to personalize yourself"
               value={imageInput}
             ></input>
           </div>
@@ -179,6 +183,7 @@ function RoastersPage() {
               className="input"
               type="text"
               onChange={handleCreateDescriptionChange}
+              placeholder="Please give us a brand statement"
               value={descriptionNewInput}
             ></input>
             <br />
@@ -189,6 +194,7 @@ function RoastersPage() {
               className="input"
               type="text"
               onChange={handleCreateLocation}
+              placeholder="City, State"
               value={location}
             ></input>
             <br />
@@ -200,14 +206,20 @@ function RoastersPage() {
               type="text"
               onChange={handleCreateNumOrdersChange}
               value={numOrders}
+             
             ></input>
           </div>
-          <button id="myBtn" class="dropbtn" type="submit">
-            Submit{" "}
-            <Link className="coffeePage" to="/coffeePage">
-              <p>Once submitted you will be able to add Coffee Info</p>
-            </Link>
+          
+            <button type="reset" value="Reset">reset</button>
+          <button type="submit">Submit</button>
+          <button id="myBtn" class="dropbtn">
+           <br></br>
+            <Link className="coffeeLink" to="/coffeePage">
+              <p>Click here if you 
+              have already submitted your information</p>
+              </Link>
           </button>
+          
         </form>
 
         {renderRoasters}

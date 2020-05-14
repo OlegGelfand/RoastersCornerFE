@@ -7,10 +7,9 @@ import RoastersPage from "./components/RoastersPage";
 import Footer from "./components/Footer";
 import CoffeePage from "./components/CoffeePage";
 import Feedback from "./components/Feedback";
-
-
+import RoasterInfo from "./components/RoasterInfo";
 import { Switch, Route } from "react-router";
-import { Breakpoint, BreakpointProvider } from "react-socks";
+import {  BreakpointProvider } from "react-socks";
 function App() {
   return (
     <div className="App">
@@ -18,6 +17,7 @@ function App() {
         <Switch>
           <Route exact={true} path="/" component={Main} />
           <Route exact path="/roasters" component={Roasters} />
+          <Route exact path="/roasters/:companyName" component={RoasterInfo} />
           <Route exact path="/coffees" component={Coffee} />
           <Route exact path="/footer" component={Footer} />
           <Route exact path="/coffeePage" component={CoffeePage} />
