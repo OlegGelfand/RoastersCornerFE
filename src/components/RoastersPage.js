@@ -86,14 +86,14 @@ function RoastersPage() {
 
   // BOTH CREATE
   const handleCreate = async (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     const json = await createRoaster({
       MemberDate: memberDateInput,
       companyName: companyNameNewInput,
       image: imageInput,
       body: descriptionNewInput,
       location: location,
-      numOrders:numOrders
+      numOrders:numOrders,
     });
     console.log("handleCreate - roaster", json);
     if (json.status === "success") {
@@ -108,8 +108,8 @@ function RoastersPage() {
     // console.log(e.target.value)
     setNumOrders(e.target.value);
   };
-  const handleCoffeeCreate = async (e) => {
-    //HandleChange for Handle Create
+ 
+  
     const handleCreateCompanyNameChange = (e) => {
       console.log(e.target.value);
       setCompanyNameNewInput(e.target.value);
@@ -135,7 +135,7 @@ function RoastersPage() {
     // function myFunction() {
     //   document.getElementById("myDropdown").classList.toggle("show");
     // }
-
+  
     return (
       <div className="Roasters">
         <Header />
@@ -213,6 +213,6 @@ function RoastersPage() {
         {renderRoasters}
       </div>
     );
-  };
-}
+  
+};
 export default RoastersPage;

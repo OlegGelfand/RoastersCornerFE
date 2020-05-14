@@ -1,0 +1,33 @@
+import React from "react";
+import "../App.css";
+import SideBars from "./SideBars";
+import Header from "./Header";
+import Footer from "./Footer";
+import { Breakpoint } from "react-socks";
+
+function Feedback() {
+  return (
+    <div className="feedback">
+      <Header />
+      <Breakpoint medium up>
+        <SideBars />
+      </Breakpoint>
+      <div >
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSelcq20ayTHVPhK4va0dmgqgUaI2uTe7RU1JTOAWDFONjVuww/viewform?embedded=true"
+          width="640"
+          height="1010"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          className="feedback"
+        >
+          Loading…
+        </iframe>
+      </div>
+      <Footer />
+    </div>
+  );
+}
+
+export default Feedback;
