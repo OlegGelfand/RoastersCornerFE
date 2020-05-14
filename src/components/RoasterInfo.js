@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 
 function RoasterInfo(props) {
     const [roasters, setRoasters] = useState([])
+    const [oneRoaster, setOneRoaster]= useState("")
 
   useEffect(() => {
     

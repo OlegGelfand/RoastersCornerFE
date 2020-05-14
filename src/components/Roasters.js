@@ -19,9 +19,9 @@ function Roasters(props) {
     makeAPICall();
   }, []);
 
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
+  // function myFunction() {
+  //   document.getElementById("myDropdown").classList.toggle("show");
+  // }
 
   const renderRoasters = roasters.map((roaster, index) => {
     console.log("this is roaster", roaster);
