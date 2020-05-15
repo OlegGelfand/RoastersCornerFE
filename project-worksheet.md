@@ -34,7 +34,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Responsive Design
 - clean design
 - render some roasters on the load page
-- React hooks (useState, useEffect, useContext, potentially others)
+- React hooks (useState, useEffect, potentially others)
 #### PostMVP EXAMPLE
 - Add a google api. Will be used for rendering a photo of the closest roaster to  user location, potentially render all local roasters on load page.
 - incorporate more CSS libraries, to improve the front end
@@ -63,44 +63,58 @@ All times below are listed in hours:
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Research | H | 4 | 5 | 5 |
-| Create back end file structure | H | .5 | 0 | 0 |
-| Create models for Roasters, and coffees | H | .5 | 0 | 0 |
-| Seed data  | H | 1 | 0 | 0 |
-| Set up GET route & controller to return all Coffees | H | .5 | 0 | 0 |
-| Set up connections for local testing, test with Postman | H | 1 | 0 | 0 |
-| Set up & test additional GET/POST/PUT/DELETE routes & controllers for Roaster | H | 2 | 0 | 0 |
-| Set up & test GET/POST/PUT/DELETE routes & controllers for Coffee | H | 2 | 0 | 0 |
-| Set up MongoDB Atlas server & and deploy db on Heroku | H | 1 | 0 | 0 |
-| Create helper file for front end | H | 1 | 0 | 0 |
-| Address Errors between BE/FE| H | 4 | 0 |0 |
-| React Components Organization | H | 4 | 0 | 0 |
-| implement useContext |H|2|0|0|
-| Logic for Roasters page Component | H | 3 | 0 |  0|
-| Create Navbar and Route Components | H | 3 |  0| 0 |
-| Basic Styling | H | 3 | 0 | 0 |
-| Deployment of Frontend | H | 1 | 0 | 0 |
+| Create back end file structure | H | .5 | .5 | .5 |
+| Create models for Roasters, and coffees | H | .5 | .5 | .5 |
+| Seed data  | H | 1 | 1 | 1 |
+| Set up GET route & controller to return all Coffees | H | .5 | .5 | 0 |
+| Set up connections for local testing, test with Postman | H | 1 | 2 | 0 |
+| Set up & test additional GET/POST/DELETE routes & controllers for Roaster | H | 2 | 3 | 3 |
+| Set up & test GET/POST/DELETE routes & controllers for Coffee | H | 2 | 3 | 3 |
+| Set up MongoDB Atlas server & and deploy db on Heroku | H | 1 | 3 | 3 |
+| Create helper file for front end | H | 1 | 1 | 1 |
+| Address Errors between BE/FE| H | 4 | 2 |2 |
+| React Components Organization | H | 4 | 5 | 5 |
+| implement googleform |H|2|1|1|
+| Logic for Roasters page Component | H | 3 |  4|  4|
+| Create Navbar and Route Components | H | 3 |  3| 3 |
+| Basic Styling | H | 3 | 4 | 4 |
+| Deployment of Frontend | H | 1 | .5 | .5 |
 | Debugging Deployed Frontend | H | 1 | 0 | 0 |
-| Make Site Responsive | H | 3 | 0 | 0 |
-| additional styling via bootstrap | M | 4 | 0 | 0 |
-|Form for coffeelovers | M | 4 | 0 | 0 |
-| Total | H | 45.5 | 5 | 5 |
+| Make Site Responsive | H | 3 | 3 | 3 |
+| additional styling  | M | 4 | 4 | 4 |
+| Total | H | 45.5 | 45 | 45 |
 
 |PostMVP|
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Add additional functionality on front end for postMVP goals | M | 4 | 0 | 0 |
-|Login for Roasters so that only Roasters can create and modify their info and Comment Components | H | 4 | 0 | 0 |
-|Add an additional css library | H | 2 | 0 | 0 |
+|Login for Roasters so that only Roasters can create and modify their info and Comment Components | H | 4 | 3 | 3 |
+|Add an additional css library | H | 2 | 0 | 2 |
 |Add a google api on the front end to show photos of the roasters building or city| H | 4 | 0 | 0 |
-| Total | H | 14 | 0 | 0 |
+| Total | H | 14 | 3 | 5s |
  
 ## Additional Libraries
 Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc.
 
 Axios,
-ReactStrap
+W3cshools- used for some buttons
+google forms- the feedback form
 
 ## Code Snippet
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description. Code snippet should not be greater than 10 lines of code.
+
+Hard to choose a portion, I was able to do everything to connect the front and back end on my own and understood what the parts were doing. Choosing one though, i guess would be incorporating react socks. My goal is to have a process down for CSS/component design, so coupling react-socks with media query taught me alot about planning a project, when to use each for of responsive design.
+
+  return (
+    <div className="roaster-boxes">
+      <div className="roasters-main-page">
+        <Header />
+        <Breakpoint medium up>
+          <SideBars />
+        </Breakpoint>
+
+        {renderRoasters}
+      </div>
+    </div>
 
 
