@@ -12,15 +12,14 @@ function Feedback() {
       <Breakpoint medium up>
         <SideBars />
       </Breakpoint>
-      <div >
+      <div>
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSelcq20ayTHVPhK4va0dmgqgUaI2uTe7RU1JTOAWDFONjVuww/viewform?embedded=true"
-          width="640"
-          height="1010"
+          width="100%"
+          height="1249"
           frameborder="0"
           marginheight="0"
           marginwidth="0"
-          className="feedback"
         >
           Loading…
         </iframe>

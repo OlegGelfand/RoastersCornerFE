@@ -38,15 +38,11 @@ function Header() {
                   <p>All Roasters</p>
                   <h5>Great People</h5>
                 </Link>
-                {/* <a href className="about"> */}
-                  <img
-                    className="logo"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbINJ_HgTWc_gxCS2JdKrZ92cxIS8l5Y9OPBN18XRQCb5bZERm&usqp=CAU"
-                    alt="mainlogo"
-                  ></img>
-                  {/* <p >RoastersCorner</p> */}
-                  {/* <h5>Get To Know Us</h5>  */}
-                {/* </a> */}
+                <img
+                  className="logo"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbINJ_HgTWc_gxCS2JdKrZ92cxIS8l5Y9OPBN18XRQCb5bZERm&usqp=CAU"
+                  alt="mainlogo"
+                ></img>
                 <Link className="coffees" to="/coffees">
                   <p>All Coffees</p>
                   <h5>Huge Selection</h5>
@@ -63,13 +59,11 @@ function Header() {
       </Breakpoint>
       <Breakpoint small down>
         <h2>Roasters Corner </h2>
-
         <img
           className="mobile-vine"
           src="https://i.ya-webdesign.com/images/vines-border-png-5.png"
           alt="topvine"
         ></img>
-
         <button className="accordion">Menu</button>
         <div className="panel">
           <Link to="/roastersPage">

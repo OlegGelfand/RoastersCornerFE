@@ -10,16 +10,14 @@ import Header from "./Header";
 import { Breakpoint } from "react-socks";
 import { Link } from "react-router-dom";
 
-function RoastersPage(props) {
+function RoastersPage() {
   const [roasters, setRoasters] = useState([]);
-  // const [companyNameInput, setCompanyNameInput] = useState("");
   const [companyNameNewInput, setCompanyNameNewInput] = useState("");
   const [descriptionNewInput, setDescriptionNewInput] = useState("");
   const [memberDateInput, setMemberDateInput] = useState("");
   const [imageInput, setImageInput] = useState("");
   const [location, setLocationInput] = useState("");
   const [numOrders, setNumOrders] = useState("");
-  const [visible, setVisible] = useState("");
 
   useEffect(() => {
     const makeAPICall = async () => {
@@ -42,7 +40,6 @@ function RoastersPage(props) {
             <div className="roaster-name">
               Company Name:{roaster.companyName}
               location:{roaster.location}
-            
               <img src={roaster.image} alt="users"></img>
               <i class="fas fa-minus-circle"></i>
             </div>
@@ -52,25 +49,15 @@ function RoastersPage(props) {
     );
   });
 
-
-  //DELETE
   const handleDelete = async (id) => {
     const json = await deleteRoaster(id);
-    console.log("handleDelete - json", json);
     if (json.status === "success") {
       const roastersArr = roasters.filter((roaster) => roaster._id !== id);
       setRoasters(roastersArr);
     }
   };
 
-  //UNUSED SUBMITS
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log(companyNameInput);
-  //   // e.target.value
-  // };
 
-  // BOTH CREATE
   const handleCreate = async (e) => {
     e.preventDefault();
     const json = await createRoaster({
@@ -79,50 +66,35 @@ function RoastersPage(props) {
       image: imageInput,
       body: descriptionNewInput,
       location: location,
-      numOrders: numOrders,
+      // numOrders: numOrders,
     });
-    console.log("handleCreate - roaster", json);
     const resp = await getAllRoasters();
-    console.log("useEffect - resp", resp);
     setRoasters(resp);
 
     if (json) {
-      // setRoasters([...roasters, json.roaster]);
       setCompanyNameNewInput("");
       setDescriptionNewInput("");
       setImageInput("");
       setLocationInput("");
-
-      // setVisible("false");
     }
   };
   const handleCreateNumOrdersChange = (e) => {
-    // console.log(e.target.value)
     setNumOrders(e.target.value);
   };
-
   const handleCreateCompanyNameChange = (e) => {
-    console.log(e.target.value);
     setCompanyNameNewInput(e.target.value);
   };
-  // const handleCreateMemberDateChange = (e) => {
-  //   console.log(e.target.value);
-  //   setMemberDateInput(e.target.value);
-  // };
   const handleCreateDescriptionChange = (e) => {
-    console.log(e.target.value);
     setDescriptionNewInput(e.target.value);
   };
   const handleCreateImage = (e) => {
-    // console.log(e.target.value)
     setImageInput(e.target.value);
   };
   const handleCreateLocation = (e) => {
-    // console.log(e.target.value)
     setLocationInput(e.target.value);
   };
 
-  // Function for createcoffee form
+
   function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
@@ -133,17 +105,10 @@ function RoastersPage(props) {
       <Breakpoint medium up>
         <SideBars />
       </Breakpoint>
-      {/* //create form  */}
       <form onSubmit={handleCreate} className="roasterFormContainer">
         <div>
           <p>Welcome insert your information here</p>
-          {/* <label>Member Since</label> */}
-          {/* <input
-            className="input"
-            type="text"
-            onChange={handleCreateMemberDateChange}
-            value={memberDateInput}
-          ></input> */}
+         
           {memberDateInput}
         </div>
         <div>
@@ -197,8 +162,6 @@ function RoastersPage(props) {
             value={numOrders}
           ></input>
         </div>
-
-        {/* <button className="submit" type="reset" value="Reset">reset</button> */}
         <button type="submit">Submit</button>
         <button id="myBtn" className="dropbtn">
           <br></br>

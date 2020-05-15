@@ -8,7 +8,6 @@ import { Breakpoint} from "react-socks";
 function Login() {
  
   return (
-  
       <div className="login">
         <button></button>
         <button></button>
@@ -16,9 +15,8 @@ function Login() {
      <Breakpoint medium up>
     <SideBars/>
       </Breakpoint>
-     <Footer/>
+     <Footer/>˝
       </div>
- 
   );
 }
 

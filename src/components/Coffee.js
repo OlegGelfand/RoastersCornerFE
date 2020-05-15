@@ -7,7 +7,6 @@ import { Breakpoint } from "react-socks";
 
 function Coffee() {
   const [coffees, setCoffees] = useState([]);
-  // const [companyNameInput, setCompanyNameInput] = useState("");
   useEffect(() => {
     const makeAPICall = async () => {
       const resp = await getAllCoffees();
@@ -22,7 +21,10 @@ function Coffee() {
       <div className="roasters-page-parent">
         <div className="roasters-page-child" key={index}>
           <div className="roaster-name">
-            <h3>Coffee Name:</h3><div className="text-style">{coffee.coffeeName}</div> <h3>Roast Type:</h3><div className="text-style"> {coffee.roastType}</div>
+            <h3>Coffee Name:</h3>
+            <div className="text-style">{coffee.coffeeName}</div>{" "}
+            <h3>Roast Type:</h3>
+            <div className="text-style"> {coffee.roastType}</div>
           </div>
         </div>
       </div>

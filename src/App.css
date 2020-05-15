@@ -15,7 +15,6 @@
 
 ul li {
   display: flex;
-  /* flex-direction: row; */
   color: black;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   list-style-type: none;
@@ -39,7 +38,6 @@ h4 {
 .main {
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
   background-color: #936b6c;
   background-color: rgba(150, 100, 100, 0.3);
   border-radius: 5%;
@@ -76,25 +74,13 @@ h2 {
   width: 50%;
   margin-top: -70px;
 }
-/* img:nth-of-type() {
-  float: right;
-}
-img {
-  height: 120px;
-  border-radius: 5%;
-  /* opacity: 80%; */
-/* }  */
 
 .left-nav {
   position:relative;
   float: left;
   height:150vh;
   width: 10%;
-  /* background-color: grey; */
-  /* border-style: double; */
-  /* border-color:aliceblue; */
   border-radius: 10px;
-  /* border-collapse: collapse; */
   background-image: url("https://camanoislandcoffee.com/wp-content/uploads/2015/12/Coffee-Strength-vs-Roast.jpg");
   background-position: 100px;
   box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2),
@@ -110,9 +96,7 @@ img {
   margin-right: 30px;
 }
 .right-nav {
-  /* position:fixed; */
   position: relative;
-  /* background-position-y: center; */
   float: right;
   height: 150vh;
   border-radius: 10px;
@@ -181,16 +165,7 @@ Example {
 li > span {
   color: blue;
 }
-/* .card {
-  display: grid;
-  margin-left: 20px;
-  width: 300px;
-  padding-left: 20px;
-  grid-template-columns: 3 2fr;
-  grid-template-rows: 3 1fr;
-  grid-gap: 20px;
-  border: 2px solid black;
-} */
+
 .roasterData {
   box-shadow: 0 17px 8px 0 rgba(107, 107, 0, 0.2),
     0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0, 0.5); /* margin-left: 40%; */
@@ -198,7 +173,6 @@ li > span {
   justify-content: center;
   align-content: center;
   display: inline-block;
-  /* width: 30%; */
   margin: 20px;
   margin-right:20px;
 }
@@ -217,21 +191,16 @@ ul {
   align-items: left;
   text-align: left;
   font-weight: 900;
-  /* background-image: url(https://www.sierrarizing.com/assets/espresso-drink-780x418.jpg); */
   opacity: 0.6;
 }
 button {
   color: black;
   box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2),
     0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0, 0.5);
-  /* border-radius: 15%; */
   font-size: 16px;
-  /* background-color: rgba(255, 255, 255,0.8); */
   margin-top: 10px;
-  /* z-index: 0; */
 }
 .roasterFormContainer {
-  /* border-radius: 5%; */
   width: 60%;
   align-content: center;
   justify-content: center;
@@ -243,7 +212,6 @@ button {
     0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0, 0.5);
 }
 .coffeeFormContainer {
-  /* border-radius: 5%; */
   width: 60%;
   align-content: center;
   justify-content: center;
@@ -255,7 +223,6 @@ button {
     0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0, 0.5);
 }
 input.input {
-  /* width: 80%; */
   box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2),
     0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2);
@@ -289,12 +256,10 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  /* z-index: 12; */
   text-align: left;
   box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2),
     0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 0 20px 8px 0 rgba(107, 107, 0, 0.2);
-  /* background-color: rgba(0, 0, 0, .2); */
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 2%;
   height: 50px;
@@ -307,10 +272,6 @@ a {
   z-index: 23;
   height: 50px;
   width: 50%;
-  /* position: relative; */
-  /* left: 0; */
-  /* border: 1px red solid; */
-  /* margin-top: 200; */
 }
 .roasterDataRepeat {
   border: 2px solid black;
@@ -361,14 +322,10 @@ a {
 .Coffee {
   font-size: 20px;
   flex:1;
-  /* display: flex; */
-  /* margin-left: 0px; */
 }
 .Roasters {
   font-size: 20px;
   flex:1;
-  /* display: flex; */
-  /* margin-left: 0px; */
 }
 .roaster-boxes {
   display:flex;
@@ -402,38 +359,16 @@ a {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.feedback{
-  margin-top:100px;
-}
-
-
-
-
 li {
   list-style-type:none;
 }
 
-/* #myBtn {
-  float:left;
-margin-top:5%;
-align-content: center;
-
-} */
 .roasters-page-child{
-  /* border: 2px solid black; */
-  /* display: grid; */
-  /* grid-auto-rows: 100px; */
-  /* grid-auto-columns:50px; */
-  /* grid-template-columns: repeat(2,1fr); */
   grid-gap:20px;
 
 }
 .roaster-pg-data{
   color:black;
-  /* display: grid; */
-  /* grid-template-columns: 30% 30%; */
- 
-  /* width:50%; */
 }
 div .roaster-name{
   display:flexbox;
@@ -460,16 +395,12 @@ div .roaster-image {
   grid-template-columns: repear(3, 1fr);
   grid-gap:20px;
 }
-/* .roasterByName{
-border: 2px solid blue;
-} */
 
 @media screen and (max-width: 321px){
   .title{
     display: none;
   }
 
- 
   .roaster-pg-data{
     color:black;
   }

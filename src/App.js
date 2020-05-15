@@ -9,7 +9,7 @@ import CoffeePage from "./components/CoffeePage";
 import Feedback from "./components/Feedback";
 import RoasterInfo from "./components/RoasterInfo";
 import { Switch, Route } from "react-router";
-import {  BreakpointProvider } from "react-socks";
+import { BreakpointProvider } from "react-socks";
 function App() {
   return (
     <div className="App">
@@ -22,7 +22,7 @@ function App() {
           <Route exact path="/footer" component={Footer} />
           <Route exact path="/coffeePage" component={CoffeePage} />
           <Route exact path="/roastersPage" component={RoastersPage} />
-          <Route exact path="/feedback" component={Feedback}/>
+          <Route exact path="/feedback" component={Feedback} />
         </Switch>
       </BreakpointProvider>
     </div>

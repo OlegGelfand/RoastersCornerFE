@@ -6,7 +6,7 @@ import Header from "./Header";
 import { Breakpoint } from "react-socks";
 import { Link } from "react-router-dom";
 
-function Roasters(props) {
+function Roasters() {
   const [roasters, setRoasters] = useState([]);
 
   useEffect(() => {
@@ -18,10 +18,6 @@ function Roasters(props) {
     makeAPICall();
   }, []);
 
-  // function myFunction() {
-  //   document.getElementById("myDropdown").classList.toggle("show");
-  // }
-
   const renderRoasters = roasters.map((roaster, index) => {
     console.log("this is roaster", roaster);
     return (
@@ -32,8 +28,11 @@ function Roasters(props) {
             to={`/roasters/${roaster.companyName}`}
           >
             <div className="roaster-pg-data">
-              <div className="roaster-name">{roaster.companyName}
-              <img src={roaster.image} alt="user"></img><h6>click here to learn more about this roaster</h6></div>
+              <div className="roaster-name">
+                {roaster.companyName}
+                <img src={roaster.image} alt="user"></img>
+                <h6>click here to learn more about this roaster</h6>
+              </div>
             </div>
           </Link>
         </div>

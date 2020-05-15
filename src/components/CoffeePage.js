@@ -5,14 +5,12 @@ import {
   createCoffee,
 } from "../services/apiHelperRoasters";
 import SideBars from "./SideBars";
-
 import "../App.css";
 import Header from "./Header";
 import { Breakpoint } from "react-socks";
 
 function CoffeePage() {
   const [coffees, setCoffees] = useState([]);
-  // const [coffeeNameInput, setCoffeeNameInput] = useState("");
   const [coffeeNameNewInput, setCoffeeNameNewInput] = useState("");
   const [descriptionNewInput, setDescriptionNewInput] = useState("");
   const [roastType, setRoastType] = useState("");
@@ -29,7 +27,7 @@ function CoffeePage() {
 
   const renderCoffees = coffees.map((coffee, index) => {
     return (
-      <div className="roasters-page-parent"key={index}>
+      <div className="roasters-page-parent" key={index}>
         <div
           className="roasters-page-child"
           key={index}
@@ -49,10 +47,8 @@ function CoffeePage() {
     );
   });
 
-
   const handleDelete = async (id) => {
     const json = await deleteCoffee(id);
-    console.log("handleDelete - json", json);
     if (json.status === "success") {
       const coffeesArr = coffees.filter((coffee) => coffee._id !== id);
       setCoffees(coffeesArr);
@@ -68,12 +64,9 @@ function CoffeePage() {
       roastType: roastType,
     });
 
-    console.log("handleCreate - roaster", json);
     const resp = await getAllCoffees();
-    console.log("useEffect - resp", resp);
     setCoffees(resp);
     if (json.status === "success") {
-      // setCoffees([...coffees, json.roaster]);
       setCoffeeNameNewInput("");
       setDescriptionNewInput("");
       setAvailableIn("");
@@ -82,24 +75,18 @@ function CoffeePage() {
   };
 
   const handleCreateCoffeeNameChange = (e) => {
-    console.log(e.target.value);
     setCoffeeNameNewInput(e.target.value);
   };
 
   const handleCreateDescriptionChange = (e) => {
-    console.log(e.target.value);
     setDescriptionNewInput(e.target.value);
   };
   const handleCreateRoastTypeChange = (e) => {
-    console.log(e.target.value);
     setRoastType(e.target.value);
   };
   const handleCreateAvailableInChange = (e) => {
-    console.log(e.target.value);
     setAvailableIn(e.target.value);
   };
-
-  //Coffee Section
 
   return (
     <div className="Coffees">
@@ -107,7 +94,6 @@ function CoffeePage() {
       <Breakpoint medium up>
         <SideBars />
       </Breakpoint>
-      {/* //create form  */}
       <form onSubmit={handleCreate} className="coffeeFormContainer">
         <div>
           <p>Create your coffees here</p>
