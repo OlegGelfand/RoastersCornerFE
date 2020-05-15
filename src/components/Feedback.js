@@ -9,9 +9,8 @@ function Feedback() {
   return (
     <div className="feedback">
       <Header />
-      <Breakpoint medium up>
-        <SideBars />
-      </Breakpoint>
+
+
       <div>
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSelcq20ayTHVPhK4va0dmgqgUaI2uTe7RU1JTOAWDFONjVuww/viewform?embedded=true"

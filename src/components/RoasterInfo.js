@@ -31,7 +31,8 @@ function RoasterInfo(props) {
         <div className="roasters-page-parent">
           <div className="roasters-page-child">
             <div className="roaster-pg-data">
-              <div className="roaster-name">{roaster.companyName}</div>
+              <div className="roaster-name">{roaster.companyName}
+              <img src={roaster.image} alt="users"></img></div>
             </div>
           </div>
         </div>

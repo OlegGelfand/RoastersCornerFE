@@ -14,9 +14,9 @@ function Footer() {
           <Link className="feedback" to="/feedback">
             <p>Feedback</p>
           </Link>
-          <Link className="about" to="/about">
+          {/* <Link className="about" to="/about">
             <p>About Us</p>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </footer>

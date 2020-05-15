@@ -38,9 +38,13 @@ function RoastersPage() {
         >
           <div className="roaster-pg-data">
             <div className="roaster-name">
-              Company Name:{roaster.companyName}
-              location:{roaster.location}
-              <img src={roaster.image} alt="users"></img>
+             {roaster.companyName}
+             <br></br><br></br>
+              {roaster.location}
+              <br></br>
+              {roaster.body}
+
+              <img className="sizes "src={roaster.image} alt="users"></img>
               <i class="fas fa-minus-circle"></i>
             </div>
           </div>
@@ -153,7 +157,7 @@ function RoastersPage() {
           ></input>
           <br />
         </div>
-        <div>
+        {/* <div>
           <label>Number of Orders </label>
           <input
             className="input"
@@ -161,7 +165,7 @@ function RoastersPage() {
             onChange={handleCreateNumOrdersChange}
             value={numOrders}
           ></input>
-        </div>
+        </div> */}
         <button type="submit">Submit</button>
         <button id="myBtn" className="dropbtn">
           <br></br>

@@ -44,6 +44,7 @@ function Main() {
       </Breakpoint>
 
       <Breakpoint small down>
+      <div className="title">RoastersCorner</div>
         <div className="square">
           <button className="mainSquare">
             <div className="text">
@@ -58,7 +59,7 @@ function Main() {
             </div>
           </button>
         </div>
-        This component will render only in mobile devices
+        
 
 </Breakpoint>
       <Footer />

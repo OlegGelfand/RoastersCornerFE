@@ -7,6 +7,7 @@ import {
 import SideBars from "./SideBars";
 import "../App.css";
 import Header from "./Header";
+import Footer from "./Footer";
 import { Breakpoint } from "react-socks";
 
 function CoffeePage() {
@@ -35,10 +36,13 @@ function CoffeePage() {
         >
           <div className="roaster-pg-data">
             <div className="roaster-name">
-              Coffee Name:{coffee.coffeeName}
-              Body:{coffee.body}
-              Packaging Sizes:{coffee.availableIn}
-              Roast Type{coffee.roastType}
+              Name:{coffee.coffeeName}
+              <br></br>
+              Description:{coffee.body}
+              <br></br>
+              Sizes:{coffee.availableIn}
+              <br></br>
+              Type{coffee.roastType}
               <i className="fas fa-minus-circle"></i>
             </div>
           </div>
@@ -133,6 +137,7 @@ function CoffeePage() {
             className="input"
             type="text"
             onChange={handleCreateAvailableInChange}
+            placeholder=" 8oz, 12oz, 16oz, GA-size"
             value={availableIn}
           ></input>
           <br />
@@ -144,6 +149,7 @@ function CoffeePage() {
       </form>
 
       {renderCoffees}
+      <Footer />
     </div>
   );
 }

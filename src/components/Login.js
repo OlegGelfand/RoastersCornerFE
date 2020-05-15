@@ -1,23 +1,21 @@
-import React from 'react';
-import "../App.css";
-import SideBars from "./SideBars";
-import Header from "./Header";
-import Footer from "./Footer";
-import { Breakpoint} from "react-socks";
+// import React from 'react';
+// import "../App.css";
+// import SideBars from "./SideBars";
+// import Header from "./Header";
+// import Footer from "./Footer";
+// import { Breakpoint} from "react-socks";
 
-function Login() {
+// function Login() {
  
-  return (
-      <div className="login">
-        <button></button>
-        <button></button>
-     <Header/>
-     <Breakpoint medium up>
-    <SideBars/>
-      </Breakpoint>
-     <Footer/>˝
-      </div>
-  );
-}
+//   return (
+//       <div className="login">
+//      <Header/>
+//      <Breakpoint medium up>
+//     <SideBars/>
+//       </Breakpoint>
+//      <Footer/>˝
+//       </div>
+//   );
+// }
 
-export default Login;
+// export default Login;
