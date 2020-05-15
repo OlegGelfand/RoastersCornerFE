@@ -4,14 +4,10 @@ function SideBars() {
   return (
     <div>
       <div className="left-nav">
-      <div className="vl">d</div>
+        <div className="vl"></div>
       </div>
-      
       <aside>
-        <div className="right-nav">
-          
-        </div>
-        
+        <div className="right-nav"></div>
       </aside>
     </div>
   );

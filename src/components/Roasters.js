@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { getAllRoasters } from "../services/apiHelperRoasters";
 import "../App.css";
 import SideBars from "./SideBars";
-import RoasterInfo from "./RoasterInfo";
 import Header from "./Header";
 import { Breakpoint } from "react-socks";
 import { Link } from "react-router-dom";

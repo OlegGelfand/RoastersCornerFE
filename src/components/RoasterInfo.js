@@ -26,20 +26,36 @@ function RoasterInfo(props) {
     
   }, [])
   console.log('roasters from roasterinfo', roasters)
-
+  // const singleRoaster = roasters.filter( roaster => {
+  //   //   console.log('what a roaster is',roaster)
+  //       return (roaster.companyName=== props.match.params.companyName);
+  //   });  
+  //   console.log('props.match.params', singleRoaster )
   
-  const singleRoaster = roasters.filter( roaster => {
+  const singleRoaster = roasters.map( roaster => {
     //   console.log('what a roaster is',roaster)
-        return (roaster.companyName=== props.match.params.companyName);
+        if(roaster.companyName=== props.match.params.companyName){
+          return( <div className="roasters-page-parent">
+          <div className="roasters-page-child" >
+              <div className="roaster-pg-data">
+                <div className="roaster-name">{roaster.companyName}
+                {/* <img src={roaster.image} alt="user"></img><h6>click here to learn more about this roaster</h6></div> */}
+              </div>
+          </div>
+          </div>
+        </div>
+          // <h1>{roaster.companyName}</h1>)
+          )}
     });  
-    console.log('props.match.params',props, singleRoaster )
+    console.log('props.match.params', singleRoaster )
   return(
       <div className="login">
-         {/* <h1> {singleRoaster.companyName}</h1> */}
+       
      <Header/>
      <Breakpoint medium up>
     <SideBars/>
       </Breakpoint>
+      {singleRoaster}
      <Footer/>
       </div>
  

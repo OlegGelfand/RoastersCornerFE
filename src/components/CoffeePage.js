@@ -8,9 +8,9 @@ import SideBars from "./SideBars";
 
 import "../App.css";
 import Header from "./Header";
-import { Breakpoint} from "react-socks";
+import { Breakpoint } from "react-socks";
 
-function CoffeesPage() {
+function CoffeePage() {
   const [coffees, setCoffees] = useState([]);
   // const [coffeeNameInput, setCoffeeNameInput] = useState("");
   const [coffeeNameNewInput, setCoffeeNameNewInput] = useState("");
@@ -29,30 +29,27 @@ function CoffeesPage() {
 
   const renderCoffees = coffees.map((coffee, index) => {
     return (
-     
-        <div className="roasters-page-parent">
-        <div className="roasters-page-child" key={index} onClick={() => handleDelete(coffee._id)}>
-         
-            <div className="roaster-pg-data">
+      <div className="roasters-page-parent"key={index}>
+        <div
+          className="roasters-page-child"
+          key={index}
+          onClick={() => handleDelete(coffee._id)}
+        >
+          <div className="roaster-pg-data">
             <div className="roaster-name">
               Coffee Name:{coffee.coffeeName}
               Body:{coffee.body}
               Packaging Sizes:{coffee.availableIn}
               Roast Type{coffee.roastType}
+              <i className="fas fa-minus-circle"></i>
             </div>
-            </div>
-            <i class="fas fa-minus-circle"></i>
           </div>
-          </div>
-     
-        
+        </div>
+      </div>
     );
   });
 
-  // const handleCompanyNameChange = (e) => {
-  //   // console.log(e.target.value)
-  //   setCoffeeNameInput(e.target.value);
-  // };
+
   const handleDelete = async (id) => {
     const json = await deleteCoffee(id);
     console.log("handleDelete - json", json);
@@ -61,22 +58,22 @@ function CoffeesPage() {
       setCoffees(coffeesArr);
     }
   };
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log(coffeeNameInput);
-  //   // e.target.value
-  // };
+
   const handleCreate = async (e) => {
     e.preventDefault();
     const json = await createCoffee({
       Description: descriptionNewInput,
       coffeeName: coffeeNameNewInput,
       availableIn: availableIn,
-      roastType:roastType,
+      roastType: roastType,
     });
+
     console.log("handleCreate - roaster", json);
+    const resp = await getAllCoffees();
+    console.log("useEffect - resp", resp);
+    setCoffees(resp);
     if (json.status === "success") {
-      setCoffees([...coffees, json.roaster]);
+      // setCoffees([...coffees, json.roaster]);
       setCoffeeNameNewInput("");
       setDescriptionNewInput("");
       setAvailableIn("");
@@ -106,19 +103,14 @@ function CoffeesPage() {
 
   return (
     <div className="Coffees">
-      
-    
-      
-       <Header/>
-        <Breakpoint medium up>
-    <SideBars/>
-      </Breakpoint> 
+      <Header />
+      <Breakpoint medium up>
+        <SideBars />
+      </Breakpoint>
       {/* //create form  */}
       <form onSubmit={handleCreate} className="coffeeFormContainer">
         <div>
-
           <p>Create your coffees here</p>
-     
         </div>
         <div>
           <label>Coffee Name: </label>
@@ -128,7 +120,7 @@ function CoffeesPage() {
             onChange={handleCreateCoffeeNameChange}
             value={coffeeNameNewInput}
           ></input>
-              </div>
+        </div>
         <div>
           <label> Place Description here </label>
           <input
@@ -159,12 +151,14 @@ function CoffeesPage() {
           ></input>
           <br />
         </div>
-     
-        <button className ="submit" type="submit">Submit</button>
+
+        <button className="submit" type="submit">
+          Submit
+        </button>
       </form>
-      
+
       {renderCoffees}
     </div>
   );
 }
-export default CoffeesPage;
+export default CoffeePage;
